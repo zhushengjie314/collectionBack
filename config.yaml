@@ -1,0 +1,8 @@
+baidu:
+  authorizationCode: 5d6c264f9d478a0d81363533ab787a24
+  clientId: ND0Ld6PSCwhBsr9m59e7ZbwHsyy5ctLd
+  clientSecret: dxBNm8Sx4u4sLSvaIsR6hu7fZDOGpVqh
+  redirectUri: oob
+
+db:
+  - {name: task, type: mongo, host: 127.0.0.1, port: 27017, user: root, pass: 123456, dataBase: task}
