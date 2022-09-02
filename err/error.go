@@ -2,7 +2,7 @@
  * @Author: 朱圣杰
  * @Date: 2022-08-28 21:37:21
  * @LastEditors: 朱圣杰
- * @LastEditTime: 2022-08-31 23:48:29
+ * @LastEditTime: 2022-09-02 14:21:09
  * @FilePath: /uploadTest/err/error.go
  * @Description:统一的错误处理，err的key为错误码，前两位为错误类型，后两位为具体错误
  *
@@ -30,6 +30,7 @@ func init() {
 	Err[1003] = &MyErr{1001, "用户不存在"}
 	Err[1004] = &MyErr{1001, "用户密码错误"}
 	Err[1005] = &MyErr{1001, "日期早于今天"}
+	Err[1006] = &MyErr{1001, "注册信息非法"}
 
 	//错误码20开头，代表后端业务代码错误
 	Err[2001] = &MyErr{1001, "任务id生成失败"}

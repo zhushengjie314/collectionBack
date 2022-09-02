@@ -5,4 +5,4 @@ baidu:
   redirectUri: oob
 
 db:
-  - {name: task, type: mongo, host: 127.0.0.1, port: 27017, user: root, pass: 123456, dataBase: task}
+  - {name: appTest, type: mongo, host: 127.0.0.1, port: 27017, user: root, pass: 123456, dataBase: appTest}
