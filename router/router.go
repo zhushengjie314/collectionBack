@@ -2,7 +2,7 @@
  * @Author: 朱圣杰
  * @Date: 2022-07-26 10:36:29
  * @LastEditors: 朱圣杰
- * @LastEditTime: 2022-09-02 14:41:54
+ * @LastEditTime: 2022-09-03 09:56:16
  * @FilePath: /uploadTest/router/router.go
  * @Description:
  *
@@ -14,6 +14,7 @@ import (
 	"fmt"
 	"uploadTest/control/task"
 	"uploadTest/control/user"
+	"uploadTest/middleware"
 
 	"github.com/gin-gonic/gin"
 )
@@ -22,6 +23,9 @@ func Router(r *gin.Engine) {
 	r.POST("/newMainTask", task.MainTask)
 	r.POST("/newSubTask", task.SubTask)
 	r.POST("/register", user.Register)
+	g := r.Group("/token")
+	g.Use(middleware.Auth)
+	g.GET("/test", middleware.Test)
 
 	r.GET("/hello", func(c *gin.Context) {
 		c.JSON(200, gin.H{
