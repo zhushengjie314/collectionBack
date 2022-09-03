@@ -2,7 +2,7 @@
  * @Author: 朱圣杰
  * @Date: 2022-07-26 10:36:29
  * @LastEditors: 朱圣杰
- * @LastEditTime: 2022-09-03 09:56:16
+ * @LastEditTime: 2022-09-03 11:25:02
  * @FilePath: /uploadTest/router/router.go
  * @Description:
  *
@@ -23,6 +23,7 @@ func Router(r *gin.Engine) {
 	r.POST("/newMainTask", task.MainTask)
 	r.POST("/newSubTask", task.SubTask)
 	r.POST("/register", user.Register)
+	r.POST("login", user.Login)
 	g := r.Group("/token")
 	g.Use(middleware.Auth)
 	g.GET("/test", middleware.Test)

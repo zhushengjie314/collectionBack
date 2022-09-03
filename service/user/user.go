@@ -2,7 +2,7 @@
  * @Author: 朱圣杰
  * @Date: 2022-09-02 13:48:28
  * @LastEditors: 朱圣杰
- * @LastEditTime: 2022-09-02 14:37:49
+ * @LastEditTime: 2022-09-03 11:10:04
  * @FilePath: /uploadTest/service/user/user.go
  * @Description: 定义用户中心相关的结构体
  *
@@ -22,9 +22,9 @@ type Pass = string
 type error = *merr.MyErr
 
 type Info struct {
-	Id   Id   `json:"id"`
-	Name Name `json:"name"`
-	Pass Pass `json:"pass"`
+	Id   Id   `bson:"id" json:"id"`
+	Name Name `bson:"name" json:"name"`
+	Pass Pass `bson:"pass" json:"pass"`
 }
 
 func (i *Info) Decode(read io.ReadCloser) (err error) {

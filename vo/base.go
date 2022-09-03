@@ -2,7 +2,7 @@
  * @Author: 朱圣杰
  * @Date: 2022-09-03 09:45:57
  * @LastEditors: 朱圣杰
- * @LastEditTime: 2022-09-03 09:47:39
+ * @LastEditTime: 2022-09-03 14:40:28
  * @FilePath: /uploadTest/vo/base.go
  * @Description: 定义基础的返回结构体
  *
@@ -27,7 +27,8 @@ type Base struct {
  */
 func NewOk(data interface{}) Base {
 	return Base{
-		Data: data,
+		Data:   data,
+		Result: true,
 	}
 }
 
