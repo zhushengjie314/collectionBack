@@ -6,3 +6,5 @@ baidu:
 
 db:
   - {name: appTest, type: mongo, host: 127.0.0.1, port: 27017, user: root, pass: 123456, dataBase: appTest}
+
+mode: test

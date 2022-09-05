@@ -2,7 +2,7 @@
  * @Author: 朱圣杰
  * @Date: 2022-07-26 10:36:29
  * @LastEditors: 朱圣杰
- * @LastEditTime: 2022-09-03 11:25:02
+ * @LastEditTime: 2022-09-05 20:04:22
  * @FilePath: /uploadTest/router/router.go
  * @Description:
  *
@@ -20,13 +20,17 @@ import (
 )
 
 func Router(r *gin.Engine) {
+
 	r.POST("/newMainTask", task.MainTask)
 	r.POST("/newSubTask", task.SubTask)
 	r.POST("/register", user.Register)
 	r.POST("login", user.Login)
-	g := r.Group("/token")
+	g := r.Group("/task")
 	g.Use(middleware.Auth)
-	g.GET("/test", middleware.Test)
+	{
+		g.POST("/newMainTask", task.MainTask)
+		g.GET("/test", middleware.Test)
+	}
 
 	r.GET("/hello", func(c *gin.Context) {
 		c.JSON(200, gin.H{
