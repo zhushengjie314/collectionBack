@@ -1,0 +1,466 @@
+{
+	"id": "04d4dd71-991f-496b-8c34-15fea9878f3e",
+	"name": "App",
+	"timestamp": "2022-09-05T11:31:00.943Z",
+	"collection_id": "0-dd60ac72-0d92-4db3-ab79-01982ff15398",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 244,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "58d6e6e5-dfac-4dd3-86d0-1c706ed4a1b0",
+			"name": "登录",
+			"time": 13,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"状态码200": true,
+				"不返回错误": true,
+				"返回true的result": true,
+				"返回data": true
+			},
+			"testPassFailCounts": {
+				"状态码200": {
+					"pass": 49,
+					"fail": 0
+				},
+				"返回code和msg": {
+					"pass": 48,
+					"fail": 0
+				},
+				"返回正确的code": {
+					"pass": 48,
+					"fail": 0
+				},
+				"返回false的result": {
+					"pass": 48,
+					"fail": 0
+				},
+				"不返回data": {
+					"pass": 48,
+					"fail": 0
+				},
+				"不返回错误": {
+					"pass": 1,
+					"fail": 0
+				},
+				"返回true的result": {
+					"pass": 1,
+					"fail": 0
+				},
+				"返回data": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				27,
+				11,
+				12,
+				11,
+				19,
+				14,
+				11,
+				12,
+				11,
+				11,
+				11,
+				12,
+				11,
+				11,
+				11,
+				11,
+				12,
+				11,
+				11,
+				11,
+				12,
+				13,
+				11,
+				12,
+				11,
+				19,
+				11,
+				11,
+				17,
+				11,
+				12,
+				12,
+				11,
+				19,
+				13,
+				12,
+				12,
+				11,
+				11,
+				12,
+				13,
+				12,
+				12,
+				12,
+				11,
+				11,
+				13,
+				13,
+				13
+			],
+			"allTests": [
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"返回code和msg": true,
+					"返回正确的code": true,
+					"返回false的result": true,
+					"不返回data": true
+				},
+				{
+					"状态码200": true,
+					"不返回错误": true,
+					"返回true的result": true,
+					"返回data": true
+				}
+			]
+		}
+	],
+	"count": 49,
+	"totalTime": 614,
+	"collection": {
+		"requests": [
+			{
+				"id": "58d6e6e5-dfac-4dd3-86d0-1c706ed4a1b0",
+				"method": "POST"
+			}
+		]
+	}
+}

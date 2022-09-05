@@ -1,0 +1,429 @@
+[
+    {
+        "id": "",
+        "pass": "",
+        "tag": "emepty_id,emepty_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": "",
+        "pass": 1,
+        "tag": "emepty_id,int_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": "",
+        "pass": 1.1,
+        "tag": "emepty_id,float_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": "",
+        "pass": [
+            "\"a\"",
+            1
+        ],
+        "tag": "emepty_id,arr_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": "",
+        "pass": {
+            "key1": "\"value1\"",
+            "key2": 2
+        },
+        "tag": "emepty_id,obj_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": "",
+        "pass": "\"30875222\"",
+        "tag": "emepty_id,not_exit_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": "",
+        "pass": "\"308752\"",
+        "tag": "emepty_id,pass_of_308753",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": 1,
+        "pass": "",
+        "tag": "int_id,emepty_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": 1,
+        "pass": 1,
+        "tag": "int_id,int_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": 1,
+        "pass": 1.1,
+        "tag": "int_id,float_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": 1,
+        "pass": [
+            "\"a\"",
+            1
+        ],
+        "tag": "int_id,arr_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": 1,
+        "pass": {
+            "key1": "\"value1\"",
+            "key2": 2
+        },
+        "tag": "int_id,obj_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": 1,
+        "pass": "\"30875222\"",
+        "tag": "int_id,not_exit_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": 1,
+        "pass": "\"308752\"",
+        "tag": "int_id,pass_of_308753",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": 1.1,
+        "pass": "",
+        "tag": "float_id,emepty_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": 1.1,
+        "pass": 1,
+        "tag": "float_id,int_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": 1.1,
+        "pass": 1.1,
+        "tag": "float_id,float_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": 1.1,
+        "pass": [
+            "\"a\"",
+            1
+        ],
+        "tag": "float_id,arr_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": 1.1,
+        "pass": {
+            "key1": "\"value1\"",
+            "key2": 2
+        },
+        "tag": "float_id,obj_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": 1.1,
+        "pass": "\"30875222\"",
+        "tag": "float_id,not_exit_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": 1.1,
+        "pass": "\"308752\"",
+        "tag": "float_id,pass_of_308753",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": [
+            "\"a\"",
+            1
+        ],
+        "pass": "",
+        "tag": "arr_id,emepty_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": [
+            "\"a\"",
+            1
+        ],
+        "pass": 1,
+        "tag": "arr_id,int_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": [
+            "\"a\"",
+            1
+        ],
+        "pass": 1.1,
+        "tag": "arr_id,float_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": [
+            "\"a\"",
+            1
+        ],
+        "pass": [
+            "\"a\"",
+            1
+        ],
+        "tag": "arr_id,arr_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": [
+            "\"a\"",
+            1
+        ],
+        "pass": {
+            "key1": "\"value1\"",
+            "key2": 2
+        },
+        "tag": "arr_id,obj_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": [
+            "\"a\"",
+            1
+        ],
+        "pass": "\"30875222\"",
+        "tag": "arr_id,not_exit_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": [
+            "\"a\"",
+            1
+        ],
+        "pass": "\"308752\"",
+        "tag": "arr_id,pass_of_308753",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": {
+            "key1": "\"value1\"",
+            "key2": 2
+        },
+        "pass": "",
+        "tag": "obj_id,emepty_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": {
+            "key1": "\"value1\"",
+            "key2": 2
+        },
+        "pass": 1,
+        "tag": "obj_id,int_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": {
+            "key1": "\"value1\"",
+            "key2": 2
+        },
+        "pass": 1.1,
+        "tag": "obj_id,float_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": {
+            "key1": "\"value1\"",
+            "key2": 2
+        },
+        "pass": [
+            "\"a\"",
+            1
+        ],
+        "tag": "obj_id,arr_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": {
+            "key1": "\"value1\"",
+            "key2": 2
+        },
+        "pass": {
+            "key1": "\"value1\"",
+            "key2": 2
+        },
+        "tag": "obj_id,obj_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": {
+            "key1": "\"value1\"",
+            "key2": 2
+        },
+        "pass": "\"30875222\"",
+        "tag": "obj_id,not_exit_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": {
+            "key1": "\"value1\"",
+            "key2": 2
+        },
+        "pass": "\"308752\"",
+        "tag": "obj_id,pass_of_308753",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": "\"30875222\"",
+        "pass": "",
+        "tag": "not_exit_id,emepty_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": "\"30875222\"",
+        "pass": 1,
+        "tag": "not_exit_id,int_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": "\"30875222\"",
+        "pass": 1.1,
+        "tag": "not_exit_id,float_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": "\"30875222\"",
+        "pass": [
+            "\"a\"",
+            1
+        ],
+        "tag": "not_exit_id,arr_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": "\"30875222\"",
+        "pass": {
+            "key1": "\"value1\"",
+            "key2": 2
+        },
+        "tag": "not_exit_id,obj_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": "\"30875222\"",
+        "pass": "\"30875222\"",
+        "tag": "not_exit_id,not_exit_pass",
+        "want_result": false,
+        "want_err_code": 1003
+    },
+    {
+        "id": "\"30875222\"",
+        "pass": "\"308752\"",
+        "tag": "not_exit_id,pass_of_308753",
+        "want_result": false,
+        "want_err_code": 1003
+    },
+    {
+        "id": "\"308753\"",
+        "pass": "",
+        "tag": "exit_id,emepty_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": "\"308753\"",
+        "pass": 1,
+        "tag": "exit_id,int_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": "\"308753\"",
+        "pass": 1.1,
+        "tag": "exit_id,float_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": "\"308753\"",
+        "pass": [
+            "\"a\"",
+            1
+        ],
+        "tag": "exit_id,arr_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": "\"308753\"",
+        "pass": {
+            "key1": "\"value1\"",
+            "key2": 2
+        },
+        "tag": "exit_id,obj_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": "\"308753\"",
+        "pass": "\"30875222\"",
+        "tag": "exit_id,not_exit_pass",
+        "want_result": false,
+        "want_err_code": 1004
+    },
+    {
+        "id": "\"308753\"",
+        "pass": "\"308752\"",
+        "tag": "exit_id,pass_of_308753",
+        "want_result": true,
+        "want_err_code": 0
+    }
+]
