@@ -2,7 +2,7 @@
  * @Author: 朱圣杰
  * @Date: 2022-09-03 11:18:29
  * @LastEditors: 朱圣杰
- * @LastEditTime: 2022-09-03 15:08:44
+ * @LastEditTime: 2022-09-05 19:24:49
  * @FilePath: /uploadTest/control/user/login.go
  * @Description: 登录的逻辑
  *
@@ -31,7 +31,11 @@ func Login(c *gin.Context) {
 	// 	return
 	// }
 	body := &user.Info{}
-	body.Decode(c.Request.Body)
+	err := body.Decode(c.Request.Body)
+	if err != nil {
+		c.AsciiJSON(http.StatusOK, vo.NewErr(err.Code, nil))
+		return
+	}
 	token, err := body.Login()
 	if err != nil {
 		c.AsciiJSON(http.StatusOK, vo.NewErr(err.Code, nil))
@@ -39,12 +43,8 @@ func Login(c *gin.Context) {
 		c.SetCookie("token", token, 0, "", "", false, false)
 		c.AsciiJSON(http.StatusOK, vo.NewOk("登录成功"))
 	}
-	// defer func() {
-	// 	if err == nil {
-	// 		c.AsciiJSON(http.StatusOK, vo.NewErr(2002, nil))
-	// 	}
-	// 	log.Error(c, "未知异常")
-	// 	recover()
-	// }()
+	defer func() {
+		recover()
+	}()
 
 }

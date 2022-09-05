@@ -1,14 +1,16 @@
 /*
  * @Author: zhushengjie314 zhushengjie314@163.com
  * @Date: 2022-09-02 10:49:11
- * @LastEditors: zhushengjie314 zhushengjie314@163.com
- * @LastEditTime: 2022-09-02 11:39:35
+ * @LastEditors: 朱圣杰
+ * @LastEditTime: 2022-09-05 16:19:48
  * @FilePath: /uploadTest/log/log.go
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
 package log
 
 import (
+	"fmt"
+
 	log "github.com/sirupsen/logrus"
 )
 
@@ -39,13 +41,17 @@ func Info(field interface{}, message string) {
 }
 
 func Error(field interface{}, message string) {
+	file, line := getTrace()
 	log.WithFields(log.Fields{
 		"data": field,
+		"file": fmt.Sprintf("%s:%d", file, line),
 	}).Error(message)
 }
 
 func Fatal(field interface{}, message string) {
+	file, line := getTrace()
 	log.WithFields(log.Fields{
 		"data": field,
+		"file": fmt.Sprintf("%s:%d", file, line),
 	}).Fatal(message)
 }

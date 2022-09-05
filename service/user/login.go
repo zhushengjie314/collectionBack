@@ -2,7 +2,7 @@
  * @Author: 朱圣杰
  * @Date: 2022-09-02 13:49:44
  * @LastEditors: 朱圣杰
- * @LastEditTime: 2022-09-03 15:04:08
+ * @LastEditTime: 2022-09-05 19:30:10
  * @FilePath: /uploadTest/service/user/login.go
  * @Description: 用户登录功能
  *
@@ -31,7 +31,11 @@ func (i *Info) Login() (token string, err error) {
 	query := bson.M{"id": i.Id}
 	res, err := db.Conn["appTest"].(*mongo.MongoDb).SearchOne("user", query)
 	if err != nil {
-		return "", err
+		if err.Code == 3005 {
+			return "", merr.Err[1003]
+		} else {
+			return "", err
+		}
 	}
 	getInfo := Info{}
 	err2 := mapstructure.Decode(res, &getInfo)

@@ -2,7 +2,7 @@
  * @Author: 朱圣杰
  * @Date: 2022-08-28 21:37:21
  * @LastEditors: 朱圣杰
- * @LastEditTime: 2022-09-03 14:55:37
+ * @LastEditTime: 2022-09-05 19:19:38
  * @FilePath: /uploadTest/err/error.go
  * @Description:统一的错误处理，err的key为错误码，前两位为错误类型，后两位为具体错误
  *
@@ -35,6 +35,8 @@ func init() {
 	Err[1007] = &MyErr{1007, "没有token"}
 	Err[1008] = &MyErr{1008, "token非法"}
 	Err[1009] = &MyErr{1009, "token过期"}
+
+	Err[1010] = &MyErr{1010, "参数解析失败"}
 
 	//错误码20开头，代表后端业务代码错误
 	Err[2001] = &MyErr{2001, "任务id生成失败"}

@@ -2,7 +2,7 @@
  * @Author: 朱圣杰
  * @Date: 2022-09-02 13:48:28
  * @LastEditors: 朱圣杰
- * @LastEditTime: 2022-09-03 11:10:04
+ * @LastEditTime: 2022-09-05 19:19:36
  * @FilePath: /uploadTest/service/user/user.go
  * @Description: 定义用户中心相关的结构体
  *
@@ -30,8 +30,8 @@ type Info struct {
 func (i *Info) Decode(read io.ReadCloser) (err error) {
 	e := json.NewDecoder(read).Decode(i)
 	if e != nil {
-		log.Error(i, e.Error())
-		err = merr.Err[1001]
+		log.Error(read, e.Error())
+		err = merr.Err[1010]
 	}
 	return
 }

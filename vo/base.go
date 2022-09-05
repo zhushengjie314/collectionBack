@@ -2,7 +2,7 @@
  * @Author: 朱圣杰
  * @Date: 2022-09-03 09:45:57
  * @LastEditors: 朱圣杰
- * @LastEditTime: 2022-09-03 14:40:28
+ * @LastEditTime: 2022-09-05 19:25:37
  * @FilePath: /uploadTest/vo/base.go
  * @Description: 定义基础的返回结构体
  *
@@ -16,7 +16,7 @@ import (
 type Base struct {
 	Code   int         `json:"code,omitempty"`
 	Msg    string      `json:"msg,omitempty"`
-	Result bool        `json:"result,omitempty"`
+	Result bool        `json:"result"`
 	Data   interface{} `json:"data,omitempty"`
 }
 
