@@ -2,7 +2,7 @@
  * @Author: 朱圣杰
  * @Date: 2022-09-03 13:51:49
  * @LastEditors: 朱圣杰
- * @LastEditTime: 2022-09-03 14:56:14
+ * @LastEditTime: 2022-09-03 17:27:43
  * @FilePath: /uploadTest/db/mongo/search_test.go
  * @Description:
  *
@@ -59,5 +59,5 @@ func TestSearch(t *testing.T) {
 		t.Fail()
 	}
 	t.Logf("返回%v/n", res)
-	bson.Unmarshal()
+
 }

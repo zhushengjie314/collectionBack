@@ -2,7 +2,7 @@
  * @Author: 朱圣杰
  * @Date: 2022-09-03 15:16:32
  * @LastEditors: 朱圣杰
- * @LastEditTime: 2022-09-03 15:32:34
+ * @LastEditTime: 2022-09-03 17:25:22
  * @FilePath: /uploadTest/tool/token/token_test.go
  * @Description:
  *
@@ -10,6 +10,8 @@
 package token
 
 import (
+	"fmt"
+	"os"
 	"testing"
 	"time"
 
@@ -39,4 +41,19 @@ func TestNew(t *testing.T) {
 	} else {
 		t.Log(tokenString)
 	}
+}
+
+func TestMain(m *testing.M) {
+	setup()
+	run := m.Run()
+	tearDown()
+	os.Exit(run)
+}
+
+func setup() {
+	fmt.Println("start")
+}
+
+func tearDown() {
+	fmt.Println("over")
 }
