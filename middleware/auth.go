@@ -2,7 +2,7 @@
  * @Author: 朱圣杰
  * @Date: 2022-09-03 09:26:09
  * @LastEditors: 朱圣杰
- * @LastEditTime: 2022-09-03 10:38:25
+ * @LastEditTime: 2022-09-05 20:35:55
  * @FilePath: /uploadTest/middleware/auth.go
  * @Description: token校验和刷新
  *
@@ -11,6 +11,7 @@ package middleware
 
 import (
 	"net/http"
+	merr "uploadTest/err"
 	"uploadTest/log"
 	"uploadTest/tool/time"
 	"uploadTest/tool/token"
@@ -18,6 +19,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 )
+
+type error = *merr.MyErr
 
 type Info struct {
 	NewToken string // 如果token快过期，则生成newToken
@@ -37,6 +40,17 @@ func Auth(c *gin.Context) {
 		c.Abort()
 		return
 	}
+	newInfo, merr := tokenValid(userToken)
+	if merr != nil {
+		c.AsciiJSON(http.StatusOK, vo.NewErr(merr.Code, nil))
+		c.Abort()
+		return
+	}
+
+	c.Set(userToken, newInfo)
+
+	return
+
 	data, err2 := token.Decode(userToken)
 	if err2 != nil {
 		log.Error(userToken, err.Error())
@@ -72,7 +86,46 @@ func Auth(c *gin.Context) {
 		}
 		c.Set(userToken, newInfo)
 	}
+}
 
+/**
+ * @description: 验证token的合法性
+ * @param {string} userToken
+ * @return {*}
+ */
+func tokenValid(userToken string) (newInfo Info, err error) {
+	data, err2 := token.Decode(userToken)
+	if err2 != nil {
+		log.Error(userToken, err2.Error())
+		err = merr.Err[1008]
+		return
+	}
+	if time.NumBigThenNow(data.ExpiresAt) {
+		log.Error(userToken, "token过期")
+		err = merr.Err[1009]
+		return
+	}
+	if time.NumEarlyNowLestN(data.ExpiresAt, 3600) {
+		data.ExpiresAt += 3600 * 24 * 15
+		tokenString, err3 := token.New(data)
+		if err3 != nil {
+			log.Error(data, err3.Error())
+			err = merr.Err[2003]
+			return
+		} else {
+			newInfo = Info{
+				NewToken: tokenString,
+				MyClaims: *data,
+			}
+			return
+		}
+	} else {
+		newInfo = Info{
+			NewToken: "",
+			MyClaims: *data,
+		}
+		return
+	}
 }
 
 /**
